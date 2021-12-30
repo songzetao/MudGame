@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+typedef struct array{
+	int x;
+	int y;
+	char type;
+}Array;
+
+int main()
+{
+	int m,n;
+	cin>>m>>n;
+	Array A[10];
+	for(int i=0;i<m;i++)
+	{
+		cin>>A[i].x>>A[i].y>>A[i].type;
+	}
+	for(int i=0;i<m;i++)
+	{
+		cout<<A[i].x<<" "<<A[i].y<<" "<<A[i].type<<endl;
+	}
+	return 0;
+} 
